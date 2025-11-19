@@ -19,7 +19,7 @@ The algorithm was tested on the "Uneven" scenario (Rush Hour / Intermittent Flow
 1. Install [SUMO Simulator](https://eclipse.dev/sumo/).
 2. Clone the repository:
 ```bash
-git clone https://github.com/vvsr_qer/stlc.git
+git clone https://github.com/vvsrq/stlc.git
 cd stlc
 ```
 
