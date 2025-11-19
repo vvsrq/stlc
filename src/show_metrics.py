@@ -24,7 +24,7 @@ def print_metrics():
         print("1. Средняя длина очереди:   Нет данных (CSV не найден)")
 
     # --- 2. Читаем данные из XML (созданного самим SUMO) ---
-    stats_file = "outputs/sumo_stats.xml"
+    stats_file = "../outputs/sumo_stats.xml"
 
     if os.path.exists(stats_file):
         tree = ET.parse(stats_file)

@@ -13,8 +13,8 @@ def throughput_only_reward(traffic_signal):
 if __name__ == '__main__':
     # --- 1. СОЗДАНИЕ СРЕДЫ С ОДНИМ ВАЖНЫМ ПАРАМЕТРОМ ---
     env = SumoEnvironment(
-        net_file='intersection.net.xml',
-        route_file='training_routes.rou.xml',
+        net_file='../sim_configs/intersection.net.xml',
+        route_file='../sim_configs/training_routes.rou.xml',
         single_agent=True,
         use_gui=False,
         num_seconds=10000,

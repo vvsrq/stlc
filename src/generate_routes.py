@@ -28,7 +28,7 @@ def generate_routefile(seed):
                       f'    <person id="ped_{i}" depart="{depart_time:.2f}"><walk from="{from_edge}" to="{to_edge}"/></person>'))
 
     trips.sort()
-    with open("evaluation_routes.rou.xml", "w") as routes:
+    with open("../sim_configs/evaluation_routes.rou.xml", "w") as routes:
         print("""<routes>
     <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="35"/>
     """, file=routes)

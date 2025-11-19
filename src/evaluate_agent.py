@@ -6,8 +6,8 @@ import numpy as np
 if __name__ == '__main__':
 
     env = SumoEnvironment(
-        net_file='intersection.net.xml',
-        route_file='evaluation_routes.rou.xml',
+        net_file='../sim_configs/intersection.net.xml',
+        route_file='../sim_configs/evaluation_routes.rou.xml',
         single_agent=True,
         use_gui=True,
         num_seconds=5000,

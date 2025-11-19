@@ -4,7 +4,7 @@ import traci
 from sumolib import checkBinary
 
 # --- НАСТРОЙКИ ---
-ROUTE_FILE = "traffic_uneven.rou.xml"
+ROUTE_FILE = "../sim_configs/traffic_uneven.rou.xml"
 
 
 def visualize_standard():

@@ -1,5 +1,5 @@
 import pandas as pd
-import generate_routes
+from src import generate_routes
 
 try:
     queue_df = pd.read_csv('baseline_queue.csv', delimiter=';')

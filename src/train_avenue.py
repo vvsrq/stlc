@@ -13,10 +13,10 @@ def train():
     # Это самый сложный случай. Если агент научится здесь, он
     # автоматически справится и с симметричным трафиком (Heavy),
     # так как там разница давлений будет около нуля, и он будет делить время поровну.
-    route_file = "traffic_uneven.rou.xml"
+    route_file = "../sim_configs/traffic_uneven.rou.xml"
 
     env = SumoEnvironment(
-        net_file="my_avenue.net.xml",
+        net_file="../sim_configs/my_avenue.net.xml",
         route_file=route_file,
         out_csv_name="outputs/my_avenue_uneven",
         use_gui=False,

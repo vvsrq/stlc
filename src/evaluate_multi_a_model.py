@@ -17,11 +17,11 @@ SCENARIOS = [
 ]
 
 MODEL_PATH = "ppo_avenue_model"
-NET_FILE = "my_avenue.net.xml"
+NET_FILE = "../sim_configs/my_avenue.net.xml"
 TELEPORT_TIME = "300"  # 5 минут терпения
 
 # Создаем папку
-if not os.path.exists("outputs_csv"): os.makedirs("outputs_csv")
+if not os.path.exists("../outputs_csv"): os.makedirs("../outputs_csv")
 
 
 def parse_tripinfo(xml_file):

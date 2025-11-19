@@ -19,7 +19,7 @@ def get_incoming_lanes():
 
 if __name__ == '__main__':
 
-    net_file = 'my_avenue.net.xml'
+    net_file = '../sim_configs/my_avenue.net.xml'
     route_file = 'avenue_traffic_generated.rou.xml'
     model_path = "dqn_model.zip"
 

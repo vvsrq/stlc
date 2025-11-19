@@ -85,7 +85,7 @@ def test_all():
         # Создаем среду
         # Важно: передаем additional_sumo_cmd, чтобы SUMO сохранил статистику в XML
         env = SumoEnvironment(
-            net_file="my_avenue.net.xml",
+            net_file="../sim_configs/my_avenue.net.xml",
             route_file=scenario['route'],
             out_csv_name=csv_output,
             use_gui=True,  # Ставим False для скорости

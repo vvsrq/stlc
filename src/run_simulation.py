@@ -11,8 +11,8 @@ def run_visual():
     # 1. Создаем среду с теми же параметрами, что и при обучении
     # Но включаем use_gui=True, чтобы видеть результат глазами
     env = SumoEnvironment(
-        net_file="my_avenue.net.xml",
-        route_file="avenue_traffic.rou.xml",
+        net_file="../sim_configs/my_avenue.net.xml",
+        route_file="../sim_configs/avenue_traffic.rou.xml",
         out_csv_name=output_name,  # Сюда запишется статистика (CSV)
         use_gui=True,  # Включаем графику SUMO
         num_seconds=3600,

@@ -5,7 +5,7 @@ from sumo_rl import SumoEnvironment
 
 # --- НАСТРОЙКИ ---
 # Выбираем сценарий, где ИИ должен всех порвать
-ROUTE_FILE = "traffic_uneven.rou.xml"
+ROUTE_FILE = "../sim_configs/traffic_uneven.rou.xml"
 MODEL_PATH = "ppo_avenue_model"
 
 
@@ -14,7 +14,7 @@ def visualize_ai():
 
     # 1. Создаем среду с ГРАФИКОЙ (use_gui=True)
     env = SumoEnvironment(
-        net_file="my_avenue.net.xml",
+        net_file="../sim_configs/my_avenue.net.xml",
         route_file=ROUTE_FILE,
         out_csv_name="outputs/visual_ai",
         use_gui=True,  # <--- ГЛАВНОЕ: Открывает окно
