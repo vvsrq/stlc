@@ -1,0 +1,15 @@
+<additional>
+    <!-- ВАЖНО: programID="0" перезаписывает дефолтную логику! -->
+    <tlLogic id="clusterJ19_J20" type="static" programID="0" offset="0">
+        <!-- Фаза 0: ГЛАВНАЯ (30 сек) -->
+        <phase duration="30" state="GGGGGGrr"/>
+        <phase duration="4"  state="yyyyyyrr"/>
+
+        <!-- Фаза 2: БОКОВАЯ (30 сек) - Смерть для главной дороги -->
+        <phase duration="30" state="GrrrrrGG"/>
+        <phase duration="4"  state="yrrrrryy"/>
+
+        <!-- Очистка -->
+        <phase duration="3"  state="rrrrrrrr"/>
+    </tlLogic>
+</additional>

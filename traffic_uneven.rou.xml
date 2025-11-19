@@ -1,0 +1,21 @@
+<routes>
+    <!-- Eвро-4, HBEFA3 - это стандарт, который SUMO точно умеет считать -->
+    <vType id="car" emissionClass="HBEFA3/PC_G_EU4" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="16.67"/>
+
+    <!-- ГЛАВНЫЙ ПОТОК: 1800 машин (Плотный, но едущий) -->
+    <flow id="flow_WE" type="car" begin="0" end="3600" number="2500" color="1,0,0">
+        <route edges="E4 E6 E0 E1 E7 E8 E21 E22"/>
+    </flow>
+
+    <!-- ВСТРЕЧКА: 0 машин (Пусто) -->
+    <!-- Стандарт будет давать сюда зеленый и тупить -->
+    <flow id="flow_EW" type="car" begin="0" end="3600" number="10" color="0,1,0">
+        <route edges="E23 E20 E9 E10 -E1 -E0 -E6 E5"/>
+    </flow>
+
+    <!-- БОКОВЫЕ: Почти пусто -->
+    <flow id="flow_local_1" type="car" begin="0" end="3600" number="50"> <route edges="E2 E3"/> </flow>
+    <flow id="flow_local_2" type="car" begin="0" end="3600" number="50"> <route edges="-E3 -E2"/> </flow>
+    <flow id="flow_local_3" type="car" begin="0" end="3600" number="50"> <route edges="E11 E21 E22"/> </flow>
+    <flow id="flow_local_4" type="car" begin="0" end="3600" number="50"> <route edges="E24 E20 E9"/> </flow>
+</routes>

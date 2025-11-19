@@ -1,0 +1,3 @@
+<crossings>
+    <crossing node="center" edges="N_in S_out E_in W_out"/>
+</crossings>

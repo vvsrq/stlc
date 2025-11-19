@@ -1,0 +1,39 @@
+<routes>
+    <!-- Тип машины: умная, не блокирует перекрестки -->
+    <vType id="car"
+           accel="3.0"
+           decel="4.5"
+           sigma="0.0"
+           length="5"
+           minGap="2.0"
+           maxSpeed="20.0"
+           laneChangeModel="SL2015"
+           lcStrategic="1.0"
+           lcCooperative="1.0"
+    />
+
+    <flow id="flow_WE" type="car" begin="0" end="3600" number="1000" color="1,1,0">
+        <route edges="E4 E6 E0 E1 E7 E8 E21 E22"/>
+    </flow>
+
+    <flow id="flow_EW" type="car" begin="0" end="3600" number="1000" color="0,1,1">
+        <route edges="E23 E20 E9 E10 -E1 -E0 -E6 E5"/>
+    </flow>
+
+    <flow id="flow_local_J1_NS" type="car" begin="0" end="3600" number="100">
+        <route edges="E2 E3"/>
+    </flow>
+
+    <flow id="flow_local_J1_SN" type="car" begin="0" end="3600" number="100">
+        <route edges="-E3 -E2"/>
+    </flow>
+
+    <flow id="flow_local_complex_NE" type="car" begin="0" end="3600" number="100">
+        <route edges="E11 E21 E22"/>
+    </flow>
+
+    <flow id="flow_local_Right_W" type="car" begin="0" end="3600" number="100">
+        <route edges="E24 E20 E9"/>
+    </flow>
+
+</routes>

@@ -1,0 +1,13 @@
+<routes>
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="35"/>
+    <flow id="flow_NS" type="car" from="N_in" to="S_out" begin="0" end="3600" number="200" />
+    <flow id="flow_SN" type="car" from="S_in" to="N_out" begin="0" end="3600" number="200" />
+    <flow id="flow_WE" type="car" from="W_in" to="E_out" begin="0" end="3600" number="200" />
+    <flow id="flow_EW" type="car" from="E_in" to="W_out" begin="0" end="3600" number="200" />
+    <personFlow id="ped_WE" begin="0" end="3600" number="100">
+        <walk from="W_in" to="E_out"/>
+    </personFlow>
+    <personFlow id="ped_NS" begin="0" end="3600" number="100">
+        <walk from="N_in" to="S_out"/>
+    </personFlow>
+</routes>

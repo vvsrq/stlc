@@ -1,0 +1,24 @@
+<configuration>
+    <input>
+        <net-file value="my_avenue.net.xml"/>
+        <route-files value="avenue_traffic.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+    <output>
+       <statistic-output value="outputs/sumo_stats.xml"/>
+       <tripinfo-output value="outputs/sumo_tripinfo.xml"/>
+    </output>
+
+    <processing>
+        <time-to-teleport value="300"/>
+        <ignore-junction-blocker value="1"/>
+        <collision.action value="warn"/>
+        <ignore-route-errors value="true"/>
+        <waiting-time-memory value="10000"/>
+    </processing>
+
+</configuration>
